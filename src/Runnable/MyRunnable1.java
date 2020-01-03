@@ -1,7 +1,7 @@
 package Runnable;
 
 /*
- * Á½ÈË±ÈÈüÅÜ²½
+ * ä¸¤äººæ¯”èµ›è·‘æ­¥
  */
 public class MyRunnable1 implements Runnable {
 	private String winner;
@@ -14,7 +14,7 @@ public class MyRunnable1 implements Runnable {
 			step++;
 			if (step == 100) {
 				winner = Thread.currentThread().getName();
-				System.out.println(winner + "»ñÊ¤£¡");
+				System.out.println(winner + "è·èƒœï¼");
 				t=true;
 			}
 			if(t)break;
@@ -23,10 +23,10 @@ public class MyRunnable1 implements Runnable {
 
 	public static void main(String args[]) {
 		MyRunnable1 s = new MyRunnable1();
-		new Thread(s, "Ğ¡Ã÷").start();
-		new Thread(s, "Ğ¡ºì").start();
+		new Thread(s, "å°æ˜").start();
+		
 		/*
-		 * ÒòÁ½¸öThread¶ÔÏó¶¼ÊÇÓÃÍ¬Ò»¸öMyRunnableµÄ¶ÔÏósÈ¥µ÷ÓÃThread()¹¹ÔìÆ÷´´½¨µÄ¡£ËùÒÔ£¬ËûÃÇ¹«ÓÃÊı¾İ£ºwinner,stepºÍt
+		 * å› ä¸¤ä¸ªThreadå¯¹è±¡éƒ½æ˜¯ç”¨åŒä¸€ä¸ªMyRunnableçš„å¯¹è±¡så»è°ƒç”¨Thread()æ„é€ å™¨åˆ›å»ºçš„ã€‚æ‰€ä»¥ï¼Œä»–ä»¬å…¬ç”¨æ•°æ®ï¼šwinner,stepå’Œt
 		 */
 
 	}
